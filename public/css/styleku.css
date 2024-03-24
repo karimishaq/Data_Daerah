@@ -1,0 +1,171 @@
+@import url("tombol.css");
+@import url("modal.css");
+body{
+    margin:0px;
+    padding:0px;
+}
+
+h1, h2, h3,h4, h5, h6{
+    padding-top:0px;
+    margin-top:0px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+table{
+    margin-top:4px;
+    margin-bottom:4px;
+    border-collapse:collapse;
+    border:solid 1px black;
+}
+
+th, td{
+    border:solid 1px black;
+    white-space: nowrap;
+    text-align: center;
+    padding: 2px 4px;
+}
+
+#logo, #menu{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#sidebar{
+    background-color: green;
+    color:white;
+    padding:8px;
+    display:flex;
+}
+
+#isi{
+    padding:4px;
+}
+
+a:link, a:visited{
+    color:blue;
+}
+
+@media only screen and (min-width: 600px) {
+    .kontainer{
+        display:grid;
+        grid-template-columns: 240px auto;
+        grid-template-rows: 64px auto;
+        height:100vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .kontainer{
+        display:grid;
+        grid-template-columns: auto;
+        height:100vh;
+    }
+}
+
+#sidebar ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+
+#sidebar a{
+    color:yellow;
+    text-decoration: none;
+}
+
+#sidebar a:hover{
+    color:gold;
+}
+
+#dropdown_menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+}
+
+#dropdown_menu img{
+    border-radius: 50%;
+    height: 64px;
+}
+
+#dropdown_menu > div{
+    display: none;
+    flex-direction: column;
+    padding: 4px;
+}
+
+#dropdown_menu:active img{
+    border: solid 2px white;
+    height:60px;
+}
+
+#dropdown_menu ul{
+    width:95%;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px #888;
+    margin: 0px;
+    padding: 0px;
+}
+
+.daftar_kartu{
+    display:grid;
+    grid-template-columns: 23% 23% 23% auto;
+    column-gap: 2%;
+    padding-right:4px;
+}
+
+.daftar_kartu > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 4px 4px 4px #888;
+    background-color: green;
+    color:white;
+    border-radius: 8pt;
+    padding: 4px;
+}
+
+.daftar_kartu > div > div{
+    height : 64pt;
+    padding : 4px;
+    margin: 4px;
+}
+
+.icon_kartu{
+    min-width: 40%;
+    width: fit-content;
+    box-shadow: 4px 4px 4px #888;
+    border-radius: 8pt;
+    font-size:64pt;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
+
+.paginasi{
+    display:flex;
+    flex-direction:row;
+    list-style-type: none;
+}
+
+.paginasi button{
+    padding:8px;
+}
+
+.paginasi a:first-child button{
+    padding:8px;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+}
+
+.paginasi a:last-child button{
+    border-top-right-radius:40%;
+    border-bottom-right-radius:50%;
+}

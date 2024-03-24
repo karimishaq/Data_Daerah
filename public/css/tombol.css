@@ -1,0 +1,49 @@
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    color:white;
+    border-radius:10%;
+    min-width:48px;
+    min-height:10pt;
+    font-size: medium;
+    height:auto;
+    width:fit-content;
+    padding:4px;
+    text-align: center;
+}
+
+.tombol, .tombol:active{
+    background:#28a745;
+    border:1px white solid;
+}
+
+.tombol:hover{
+    background:#009700;
+}
+
+.hapus, .hapus:active{
+    background:#dc3545;
+    border:1px white solid;
+}
+
+.hapus:hover{
+    background:#cc0045;
+}
+
+.tombol, .tombol:active{
+    background:#28a745;
+    border:1px white solid;
+}
+
+.tombol:hover{
+    background:#009700;
+}
+
+.info, .hapus:active{
+    background:#4935dc;
+    border:1px white solid;
+}
+
+.info:hover{
+    background:#4900dc;
+}
